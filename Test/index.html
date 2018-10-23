@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSA Bio Spy!</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+
+  
+<!-- <div class="app">
+    {{ message }}
+  <graph-bar></graph-bar>
+</div> -->
+
+<section id="app" class="section">
+    <h1 class="title is-1">
+        {{ message }}
+    </h1>
+    <graph-bar
+        :labels="labels"
+        :values="votes"
+        type="bar"
+    >
+    </graph-bar>
+</section>
+
+<script src="./graphbar.js"></script>
+  </body>
+</html>
